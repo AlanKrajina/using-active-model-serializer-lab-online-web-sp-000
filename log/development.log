@@ -2918,3 +2918,13 @@ Processing by ProductsController#show as JSON
 Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products" for 89.201.217.252 at 2019-10-03 11:20:36 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 296ms (Views: 280.4ms | ActiveRecord: 0.8ms)
+
+
