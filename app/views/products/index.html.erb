@@ -9,7 +9,7 @@
 $(function() {
   $(".js-more").on("click", function() {
     var id = $(this).data("id");
-    $.getJSON("/products/" + id + ".json", function(p) {         -> promjena
+    $.getJSON("/products/" + id + ".json", function(p) {  
       var inventoryText = "<strong>Available</strong>";
       if(p.inventory === 0){
         inventoryText = "<strong>Sold Out</strong>";
