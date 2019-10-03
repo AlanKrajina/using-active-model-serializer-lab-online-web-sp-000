@@ -3150,3 +3150,13 @@ Processing by ProductsController#show as JSON
 Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/products/31.json" for 89.201.217.252 at 2019-10-03 11:35:26 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 31]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (3.14ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+
+
